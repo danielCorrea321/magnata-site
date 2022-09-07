@@ -10,9 +10,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <header>
       <div>LOGO</div>
       <ul>
-        <li>home</li>
-        <li>local</li>
-        <li>eventos</li>
+        <li><a>home</a></li>
+        <li><a>local</a></li>
+        <li><a>eventos</a></li>
       </ul>
       <div 
         className="menuBar"
@@ -29,9 +29,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       style={{display: show}}
     >
       <ul>
-        <li>home</li>
-        <li>local</li>
-        <li>eventos</li>
+        <li onClick={() => setShow('none')}><a>home</a></li>
+        <li onClick={() => setShow('none')}><a>local</a></li>
+        <li onClick={() => setShow('none')}><a>eventos</a></li>
       </ul>
     </div>
     

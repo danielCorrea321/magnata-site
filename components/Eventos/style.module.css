@@ -1,0 +1,30 @@
+.areaEventos {
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.eachEvent {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px black;
+    margin: 10px;
+    border-radius: 5px;
+}
+.areaEventos img {
+    width: 220px;
+    margin: 5px;
+    box-shadow: 4px 4px rgba(0,0,0,.5);
+}
+.nomeEvent {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.dataEvent {
+    text-align: center;
+    margin-bottom: 10px;
+}
