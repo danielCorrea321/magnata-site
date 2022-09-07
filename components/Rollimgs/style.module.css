@@ -1,0 +1,10 @@
+.container {
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container div {
+  min-width: 1000px;
+}
