@@ -1,6 +1,7 @@
 .container {
   height: 500px;
   width: 1000px;
+  margin-top: 70px;
   display: flex;
   overflow-x: hidden;
   overflow-y: hidden;

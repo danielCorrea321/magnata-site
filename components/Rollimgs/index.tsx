@@ -2,18 +2,23 @@ import { useState } from 'react';
 import styles from './style.module.css';
 
 const Rollimgs = () => {
-    const [rollImg, setRollImg] = useState(true);
 
-    function RollImg() {
-        rollImg ? setRollImg(false) : setRollImg(true)
+    const [rollImg, setRollImg] = useState('-1000px');
+
+    const RollImg = () => {
+        if(rollImg === '-1000px'){
+            setRollImg('0px')
+        }else{
+            setRollImg('-1000px')
+        }
     }
 
-    setInterval(RollImg, 3000);
+    setTimeout(RollImg, 3000);
 
     return (
         <div className={styles.container}>
             <div
-                style={{marginLeft: rollImg ? '-1000px' : '0px'}}
+                style={{marginLeft: rollImg}}
             >
                 <img 
                     src="https://noticiasdatv.uol.com.br/media/_versions/artigos/dilsinho-show-reproducao-instagram_fixed_large.jpg" 

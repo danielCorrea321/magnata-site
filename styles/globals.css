@@ -21,7 +21,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 70px;
+  height: 70px; width: 100vw;
+  position: fixed;
 }
 header ul {
   display: flex;

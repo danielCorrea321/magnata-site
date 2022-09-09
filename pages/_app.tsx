@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ul>
         <li><a>home</a></li>
         <li><a>local</a></li>
-        <li><a>eventos</a></li>
+        <li><a href='.eventoArea'>eventos</a></li>
       </ul>
       <div 
         className="menuBar"
