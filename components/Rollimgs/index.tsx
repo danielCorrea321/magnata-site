@@ -3,13 +3,15 @@ import styles from './style.module.css';
 
 const Rollimgs = () => {
 
-    const [rollImg, setRollImg] = useState('-1000px');
+    let size = '-600px'
+
+    const [rollImg, setRollImg] = useState(size);
 
     const RollImg = () => {
-        if(rollImg === '-1000px'){
+        if(rollImg === size){
             setRollImg('0px')
         }else{
-            setRollImg('-1000px')
+            setRollImg(size)
         }
     }
 
@@ -18,14 +20,18 @@ const Rollimgs = () => {
     return (
         <div className={styles.container}>
             <div
+                className={styles.imgRoll}
                 style={{marginLeft: rollImg}}
             >
                 <img 
                     src="https://noticiasdatv.uol.com.br/media/_versions/artigos/dilsinho-show-reproducao-instagram_fixed_large.jpg" 
-                    alt="" 
+                    alt=""
                 />
             </div>
-            <div>
+            <div
+                className={styles.imgRoll}
+                style={{marginLeft: rollImg}}
+            >
                 <img src="https://media.contentapi.ea.com/content/dam/gin/images/2017/01/the-godfather-keyart.jpg.adapt.crop16x9.575p.jpg" alt="" />
             </div>
         </div>
