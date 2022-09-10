@@ -1,0 +1,22 @@
+.rodape{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.rodapeItems {
+    background-color: #ff0000;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+footer .finalDiv {
+    background-color: aqua;
+    width: 100vw;
+    display: flex;
+    padding: 5px;
+    text-align: center;
+}

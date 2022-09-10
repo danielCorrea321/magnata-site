@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useState } from 'react'
+import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [show, setShow] = useState('none')
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <li><a>home</a></li>
         <li><a>local</a></li>
         <li><a href='.eventoArea'>eventos</a></li>
+        <li><a>Aniversariante</a></li>
       </ul>
       <div 
         className="menuBar"
@@ -21,6 +23,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div></div>
         <div></div>
         <div></div>
+      </div>
+      <div className='socialMedias'>
+        F
+        I
       </div>
     </header>
 
@@ -36,6 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </div>
     
     <Component {...pageProps} />
+    <Footer/>
   </>
   )
 }

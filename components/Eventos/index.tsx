@@ -9,6 +9,7 @@ const Eventos = () => {
                     <img src={item.img} alt="" />
                     <div className={styles.nomeEvent}>{item.name}</div>
                     <div className={styles.dataEvent}>{item.data}</div>
+                    <div className={styles.button}>informações</div>
                 </div>
             ))}
         </div>

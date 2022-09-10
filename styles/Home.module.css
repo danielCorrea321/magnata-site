@@ -118,6 +118,13 @@
   width: 80%;
 }
 
+.bar {
+  background: linear-gradient(white, rgb(222, 222, 222));
+  width: 100vw;
+  height: 20px;
+  margin-top: 20px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
